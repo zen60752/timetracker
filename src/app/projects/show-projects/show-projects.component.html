@@ -1,0 +1,25 @@
+<br><br>
+
+<div class="container-fluid">
+  <table class="table table-striped table-bordered dt-responsive" id="table_id">
+      <thead class="thead-dark"> 
+        <tr>
+          <th style="vertical-align: middle; text-align: center;">Name</th>
+          <th style="vertical-align: middle; text-align: center;">State</th>
+          <th style="vertical-align: middle; text-align: center;">Budget in hours</th>
+          <th style="vertical-align: middle; text-align: center;">Comments</th>
+          <th style="vertical-align: middle; text-align: center;">Creation date</th>
+          <!-- <th>Remarks</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Plist of ProjectList">
+          <td>{{Plist.name}}</td>
+          <td>{{Plist.state}}</td>
+          <td>{{Plist.budgetInHours}}</td>
+          <td>{{Plist.comments}}</td>
+          <td>{{Plist.creationDate}}</td>
+        </tr>
+      </tbody>
+  </table>
+</div>

@@ -1,0 +1,43 @@
+<br><br>
+
+<div class="container-fluid">
+  <table class="table table-striped table-bordered dt-responsive" id="table_id">
+      <thead class="thead-dark"> 
+        <tr>
+          <th style="vertical-align: middle; text-align: center;">Name</th>
+          <th style="vertical-align: middle; text-align: center;">Employer Number</th>
+          <th style="vertical-align: middle; text-align: center;">Email</th>
+          <th style="vertical-align: middle; text-align: center;">Contact No.</th>
+          <th style="vertical-align: middle; text-align: center;">Office</th>
+          <th style="vertical-align: middle; text-align: center;">Department</th>
+          <th style="vertical-align: middle; text-align: center;">Language</th>
+          <th style="vertical-align: middle; text-align: center;">Additional Info</th>
+          <th style="vertical-align: middle; text-align: center;">Date of entry</th>
+          <th style="vertical-align: middle; text-align: center;">Date of separation</th>
+          <th style="vertical-align: middle; text-align: center;">Date of birth</th>
+          <!-- <th>Remarks</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Ulist of UserList">
+          <td>{{Ulist.lastName}}, {{Ulist.firstName}}</td>
+          <td>{{Ulist.employerNumber}}</td>
+          <td>{{Ulist.email}}</td>
+          <td>{{Ulist.phoneNumber}}</td>
+          <td>{{Ulist.branchOffice}}</td>
+          <td>{{Ulist.department}}</td>
+          <td>{{Ulist.language}}</td>
+          <td>{{Ulist.additionalInfo}}</td>
+          <td>{{Ulist.dateEntry}}</td>
+          <td>{{Ulist.dateOfSeparationFromCompany}}</td>
+          <td>{{Ulist.dayOfBirth}}</td>
+        </tr>
+      </tbody>
+  </table>
+ 
+
+
+
+
+
+
